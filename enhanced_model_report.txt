@@ -1,0 +1,31 @@
+================================================================================
+ENHANCED FOOD DELIVERY PREDICTION MODEL REPORT
+================================================================================
+Generated: 2025-09-21 22:38:59
+
+REGRESSION RESULTS (Delivery Time Prediction)
+--------------------------------------------------
+linear_regression   : R²=-0.2153, MAE=29.28, RMSE=33.53
+random_forest       : R²=0.0924, MAE=24.64, RMSE=28.97
+gradient_boosting   : R²=0.0501, MAE=25.58, RMSE=29.64
+svr                 : R²=-0.0023, MAE=25.35, RMSE=30.45
+mlp                 : R²=-0.3002, MAE=29.74, RMSE=34.68
+lightgbm            : R²=-0.0500, MAE=27.15, RMSE=31.16
+voting              : R²=0.0385, MAE=25.68, RMSE=29.82
+
+Best Regression Model: random_forest (R²: 0.0924)
+Target R² >= 0.60: NOT ACHIEVED
+
+CLASSIFICATION RESULTS (Fast/Slow Delivery)
+--------------------------------------------------
+logistic_regression : Acc=0.5250, F1=0.5366, AUC=0.4725
+random_forest       : Acc=0.5500, F1=0.5909, AUC=0.5575
+gradient_boosting   : Acc=0.6000, F1=0.6190, AUC=0.6650
+svc                 : Acc=0.6500, F1=0.6818, AUC=0.3900
+mlp                 : Acc=0.6250, F1=0.6154, AUC=0.6450
+lightgbm            : Acc=0.6250, F1=0.6512, AUC=0.6500
+
+Best Classification Model: svc (Accuracy: 0.6500)
+Target Accuracy >= 0.70: NOT ACHIEVED
+
+================================================================================
